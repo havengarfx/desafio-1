@@ -1,5 +1,11 @@
 {
-    "editor.autoSave": "off",
-    "editor.formatOnSave": true,
-    "prettier.singleQuote": true,
+  "editor.autoSave": "off",
+  "editor.formatOnSave": true,
+  "prettier.singleQuote": true,
+  "emmet.syntaxProfiles": {
+    "javascript": "jsx"
+  },
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  }
 }
