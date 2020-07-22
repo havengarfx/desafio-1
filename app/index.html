@@ -1,51 +1,66 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
 
-<head>
-	<meta charset="utf-8">
-	<meta name="description" content="">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>desafio 1</title>
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <!-- Place favicon.ico in the root directory -->
+    <!-- build:css styles/vendor.css -->
+    <!-- <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css" type="text/css" /> -->
+    <!-- endbuild -->
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="./styles/main.css" />
+    <!-- endbuild -->
+    <!-- build:js scripts/modernizr.js -->
+    <!-- <script src="scripts/modernizr.js"></script> -->
+    <!-- endbuild -->
+  </head>
 
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>desafio 1</title>
-	<link rel="apple-touch-icon" href="apple-touch-icon.png">
-	<!-- Place favicon.ico in the root directory -->
-	<!-- build:css styles/vendor.css -->
-	<!-- <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css" type="text/css" /> -->
-	<!-- endbuild -->
-	<!-- build:css styles/main.css -->
-	<link rel="stylesheet" href="./styles/main.scss">
-	<!-- endbuild -->
-	<!-- build:js scripts/modernizr.js -->
-	<!-- <script src="scripts/modernizr.js"></script> -->
-	<!-- endbuild -->
-</head>
+  <body>
+    <form class="form-search-users">
+      <label id="lab-search">Pesquisa de usuários</label>
 
-<body>
-	<form>
-		<label class="lab-search" id="lab-search">Pesquisa de usuários</label>
-		<div class="new"></div>
-		<br>
-		<input type="text" name="" id="input-search" size="110">
-		<button type="submit" id="btn-search">Buscar</button>
+      <br /><br /><br />
+      <input type="text" name="" id="input-search" size="110" />
+      <button type="submit" id="btn-search">Buscar</button>
+    </form>
+    <br /><br />
+    <div class="users">
+      <p>Nenhum usuário filtrado</p>
+    </div>
+    <div class="statistics">
+      <p>Nada a ser exibido</p>
+    </div>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function (b, o, i, l, e, r) {
+        b.GoogleAnalyticsObject = l;
+        b[l] ||
+          (b[l] = function () {
+            (b[l].q = b[l].q || []).push(arguments);
+          });
+        b[l].l = +new Date();
+        e = o.createElement(i);
+        r = o.getElementsByTagName(i)[0];
+        e.src = "https://www.google-analytics.com/analytics.js";
+        r.parentNode.insertBefore(e, r);
+      })(window, document, "script", "ga");
+      ga("create", "UA-XXXXX-X");
+      ga("send", "pageview");
+    </script>
+    <!-- build:js scripts/vendor.js -->
+    <!-- <script type="text/javascript" src="/node_modules/jquery/dist/jquery.min.js"></script>
+	<!-- <script type="text/javascript" src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script> -->
 
-	</form>
-
-	<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-	<script>
-		(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-      e.src='https://www.google-analytics.com/analytics.js';
-      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-XXXXX-X');ga('send','pageview');
-	</script>
-	<!-- build:js scripts/vendor.js -->
-	<!-- <script type="text/javascript" src="/node_modules/jquery/dist/jquery.min.js"></script>
-	<!-- <script type="text/javascript" src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script> --> -->
-	<!-- endbuild -->
-	<!-- build:js scripts/main.js -->
-	<script src="scripts/main.js"></script>
-	<!-- endbuild -->
-</body>
-
+    <!-- endbuild -->
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+  </body>
 </html>
